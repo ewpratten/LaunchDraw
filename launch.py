@@ -28,6 +28,10 @@ def flush():
     lp.Reset()
     lp.Close()
 
+def reset():
+    lp.ButtonFlush()
+    lp.Reset()
+
 def setlight(x,y):
 
     if buttons[y][x] == False:
